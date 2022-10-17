@@ -191,7 +191,9 @@ h2.hidden {
         font-weight: 700;
         line-height: 1.88;
         letter-spacing: 0.06em;
-
+        
+        transform: scale(1);
+        transition: transform var(--transition-dur-and-func);
 }
 
 .button.secondary {
@@ -205,6 +207,11 @@ h2.hidden {
         letter-spacing: 0.03em;
 
         transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), shadow var(--transition-dur-and-func), padding var(--transition-dur-and-func);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+        transform: scale(1.1);
 }
 
 .button.secondary:hover,
@@ -577,7 +584,7 @@ h2.hidden {
         height: 294px;
         left: 0;
         bottom: 0;
-        transform: translate(0, 100%);
+        transform: translate(0, 102%);
         background: rgba(33, 150, 243, 0.9);
 
         transition: transform var(--transition-dur-and-func);
